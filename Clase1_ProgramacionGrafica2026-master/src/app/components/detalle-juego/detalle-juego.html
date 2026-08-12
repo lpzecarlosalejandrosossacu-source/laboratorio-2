@@ -1,0 +1,14 @@
+@if (juego){
+<div class="detalle">
+  <a routerLink="/">Volver a la lista</a>
+  <div class="perfil">
+    <img [src]="juego.imagen" [alt]="juego.nombre" style="max-width: 300px; border-radius: 8px; margin-bottom: 20px;">
+    <div class="info">
+      <h1>{{juego.nombre}}</h1>
+      <p><strong>Modelo:</strong> {{juego.modelo}}</p>
+      <p><strong>Año:</strong> {{juego.anio}}</p>
+      <p><strong>Descripción:</strong> {{juego.descripcion}}</p>
+    </div>
+  </div>
+</div>
+}
